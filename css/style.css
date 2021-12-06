@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Merriweather:ital@1&family=Playfair+Display&display=swap');
+
+
+:root{
+    --violet:rgb(102, 7, 102);
+
+}
+*{
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+}
+html::-webkit-scrollbar{
+    width: .7rem;
+
+}
+html::-webkit-scrollbar-thumb{
+    color: var(--violet);
+    
+}
+body {
+    padding-right: 5rem;
+}
+section{
+    padding: 1rem 5%;
+    min-height: 100vh;
+
+}
+.heading{
+    text-align: center;
+    padding-bottom:2rem ;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #222;
+
+}
+.heading span{
+    text-transform: uppercase;
+    color: var(--violet);
+}
+header{
+    position: fixed;
+    top: 0; right: 0;
+    min-height: 100vh;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    z-index: 1000;
+}
+header .navbar{
+    writing-mode: vertical-lr;
+    padding:1.5rem;
+} 
+header .navbar a{
+    padding:1.5rem;
+    font-size: 2rem;
+    color: #222;
+
+}
+header .navbar a:hover{
+    color: var(--violet);
+}
+#menu-bars{
+    position: fixed;
+    z-index: 10000;
+    top: 1rem;left: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    color: #fff;
+    background: var(--violet);
+    cursor: pointer;
+    font-size: 3rem;
+    display: none;
+}
+ .home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+}
+.home .image{
+    flex: 1 1 40rem;
+}
+.home .image img{
+    width: 100%;
+    clip-path: circle();
+}
+.home .content{
+    flex: 1 1 40rem;
+}
+.home .content .hi{
+    font-size: 2rem;
+    color: var(--violet);
+
+}
+.home .content  h3{
+    font-size: 4.5rem;
+    color:#111;
+    text-transform: uppercase;
+
+}
+.home .content  h3 span{
+    
+    color:var(--violet);
+    text-transform: uppercase;
+    
+}
+.home .content .info{
+    font-size: 2.5rem;
+    color: #111;
+    padding: .5rem 0;
+
+}
+.home .content .text{
+    font-size: 1.7rem;
+    color: #666;
+    padding: .5rem 0;
+    text-transform: none;
+
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    background: var(--violet);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+
+}
+.btn:hover{
+    background: #111;
+    letter-spacing: .2rem;
+}
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.about .row .image{
+    text-align: center;
+    flex: 1 1 25rem;
+}
+.about .row .image img{
+    width: 30rem;
+    border-radius: .5rem;
+    border: 0 .5rem 1rem #fff;
+    box-shadow: - .5rem 1rem rgba(0,0,0,.1);
+
+}
+.about .row .content{
+    flex: 1 1 55rem;
+}
+.about .row .content h3{
+    color: #222;
+    font-size: 4rem;
+}
+.about .row .content h3 span{
+    color: var(--violet);
+}
+.about .row .content .info{
+    color: #333;
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    line-height: 2;
+}
+.about .row .content .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem 0;
+
+}
+.about .row .content .box-container .box{
+    flex: 1 1 20rem;
+
+}
+.about .row .content .box-container .box p{
+    font-size: 1.7rem;
+    color: #222;
+    padding: .5rem 0;
+    line-height: 2;
+    text-transform: none;
+}
+.about .row .content .box-container .box p span{
+    color: var(--violet);
+    text-transform: none;
+
+}
+
+.skill .row-2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+
+}
+.skill .row-2 .skills{
+    flex: 1 1 40rem;
+
+}
+.skill .row-2 .skills .progress{
+    padding: 1rem 0;
+}
+.skill .row-2 .skills .progress h3{
+    display: flex;
+    justify-content: space-between;
+    padding: .7rem 0;
+    font-size: 1.7rem;
+    color: #111;
+    font-weight: 400;
+}
+
+.skill .row-2 .skills .progress .bar{
+    width: 100%;
+    background: #ccc;
+    overflow: hidden;
+    height: 1rem;
+    border-radius: 50rem;
+
+}
+.skill .row-2 .skills .progress .bar span{
+    display: block;
+    height: 100%;
+    background: var(--violet);
+    border-radius: 50rem;
+
+}
+.skill .row-2 .skills .progress:nth-child(1) .bar span{
+    width: 95%;
+}
+.skill .row-2 .skills .progress:nth-child(2) .bar span{
+    width: 95%;
+}
+.skill .row-2 .skills .progress:nth-child(3) .bar span{
+    width: 65%;
+}
+.skill .row-2 .skills .progress:nth-child(4) .bar span{
+    width: 65%;
+}
+.skill .row-2 .skills .progress:nth-child(5) .bar span{
+    width: 50%;
+}
+.skill .row-2 .box-container{
+    flex: 1 1 40rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem; 
+}
+.skill .row-2 .box-container .box{
+    flex: 1 1 30rem;
+    background: #fff;
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+.skill .row-2 .box-container .box h3{
+    color: var(--violet);
+    font-size: 5rem;
+}
+.skill .row-2 .box-container .box p{
+    font-size: 1.7rem;
+    color:var(--violet);
+    padding-top: .5rem;
+}
+.contact .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+}
+.contact .row .image{
+    flex: 1 1 40rem;
+
+}
+.contact .row .image img{
+    width: 100%;
+    
+}
+.contact .row form{
+    flex: 1 1 40rem;
+    padding: 1rem 2rem;
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    background: #fff;
+    border-radius: .5rem;   
+}
+.contact .row form .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.contact .row form .inputBox input,
+.contact .row form .box,
+.contact .row form textarea{
+     width: 100%;
+     border-radius: .5rem;
+     font-size: 1.7rem;
+     color: #333;
+     padding: 1rem;
+     margin: 1rem 0;
+     border: .1rem solid rgba(0,0,0,.1);
+     text-transform: none;
+
+
+}
+.contact .row form .inputBox input:focus,
+.contact .row form .box:focus,
+.contact .row form textarea:focus{
+    border-color: var(--violet);
+}
+.contact .row form .inputBox input{
+    width: 49%;
+
+}
+.contact .row form textarea{
+    height: 20rem;
+    resize: none;
+}
+.contact .row form .btn{
+    margin: .5rem 0;
+    border-radius: .5rem;
+}
+.footer{
+    padding: 2.5rem;
+    font-size: 2rem;
+    color: #666;
+    background: #fff;
+    text-align: center;
+}
+.footer span{
+    color: var(--violet);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    body{
+        padding-right: 0;
+    }
+    header{
+        width: 100%;
+        left: -120%;
+
+    }
+    header.active{
+        left: 0%;
+
+    }
+    #menu-bars{
+        display: initial;
+    }
+    header .navbar{
+        writing-mode: horizontal-tb;
+
+    }
+    header .navbar a{
+        display: block;
+        font-size: 3rem;
+    }
+}
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .heading{
+        font-size: 4rem;
+        
+    }
+    .contact .row form .inputBox input{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
