@@ -100,7 +100,7 @@ header .navbar a:hover{
     clip-path: circle();
 }
 .home .content{
-    flex: 1 1 40rem;
+    flex: 1 1 39rem;
 }
 .home .content .hi{
     font-size: 2rem;
